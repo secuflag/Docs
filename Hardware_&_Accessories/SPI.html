@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>SPI - UDOO Quad/Dual Docs</title>
+    <meta name="description" content="UDOO Board Documentation" />
+    <meta name="author" content="UDOO Team">
+    <meta charset="UTF-8">
+    <link rel="icon" href="http://www.udoo.org/wp-content/uploads/2014/12/logo_udoo_32.ico" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/theme-navy.udoo.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/udoo.css' rel='stylesheet' type='text/css'>
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="google-site-verification" content="GlKlGkbxuWQ3LNWx0akLYkqoWLrtF5b0ug9UpGadSuc" />
+    <meta name="google-site-verification" content="vL1Qo6JWKZBq6fzVJLJhbyqHya1TBhZd78OJDA-Qe1s" />
+    
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+    <script src="../themes/daux/js/bootstrap.min.js"></script>
+</head>
+<body class="">
+    
+    <a href="https://github.com/UDOOboard/Docs" target="_blank" id="github-ribbon" class="hidden-print"><img src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+<div class="container-fluid fluid-height wrapper">
+    <div class="navbar navbar-static-top hidden-print">
+        <div class="container-fluid">
+            <a class="udoologo pull-left" href="../index.html">
+		<img src="http://www.udoo.org/docs/img/logo_docs.png"> <span>Docs</span>
+		<a class="btn btn-lg button_docs pull-right" href="http://www.udoo.org/docs-neo/">UDOO Neo Docs</a>
+</a>
+
+        </div>
+    </div>
+    <div class="row columns content">
+        <div class="left-column article-tree col-sm-3 hidden-print">
+            <!-- For Mobile -->
+            <div class="responsive-collapse">
+                <button type="button" class="btn btn-sidebar" id="menu-spinner-button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="sub-nav-collapse" class="sub-nav-collapse">
+                <!-- Navigation -->
+                <ul class='nav nav-list'><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Introduction</a><ul class='nav nav-list'><li class=''><a href="../Introduction/Introduction.html">Introduction</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Getting Started</a><ul class='nav nav-list'><li class=''><a href="../Getting_Started/Very_First_Start.html">Very First Start</a></li><li class=''><a href="../Getting_Started/Create_A_Bootable_MicroSD_card_for_UDOO_QUAD-DUAL.html">Create A Bootable MicroSD card for UDOO QUAD-DUAL</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Basic Setup</a><ul class='nav nav-list'><li class=''><a href="../Basic_Setup/Connecting_Via_Serial_Cable.html">Connecting Via Serial Cable</a></li><li class=''><a href="../Basic_Setup/Find_IP_Address.html">Find IP Address</a></li><li class=''><a href="../Basic_Setup/Web_Control_Panel.html">Web Control Panel</a></li><li class=''><a href="../Basic_Setup/Remote_Terminal_(SSH).html">Remote Terminal (SSH)</a></li><li class=''><a href="../Basic_Setup/Remote_Desktop_(VNC).html">Remote Desktop (VNC)</a></li><li class=''><a href="../Basic_Setup/UDOO_Configuration_Tool.html">UDOO Configuration Tool</a></li><li class=''><a href="../Basic_Setup/Usb_Direct_Connection.html">Usb Direct Connection</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Software & OS Distro</a><ul class='nav nav-list'><li class=''><a href="../Software_&_OS_Distro/UDOObuntu.html">UDOObuntu</a></li><li class=''><a href="../Software_&_OS_Distro/Android.html">Android</a></li><li class=''><a href="../Software_&_OS_Distro/Other_Unofficial_Distributions.html">Other Unofficial Distributions</a></li></ul></li><li class='open has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Hardware & Accessories</a><ul class='nav nav-list'><li class=''><a href="../Hardware_&_Accessories/GPIO_Pinout.html">GPIO Pinout</a></li><li class=''><a href="../Hardware_&_Accessories/IMX6_And_Sam3X_Communication.html">IMX6 And Sam3X Communication</a></li><li class=''><a href="../Hardware_&_Accessories/UDOO_LVDS_Panels.html">UDOO LVDS Panels</a></li><li class=''><a href="../Hardware_&_Accessories/UDOO_Camera_Module.html">UDOO Camera Module</a></li><li class=''><a href="../Hardware_&_Accessories/Boot_from_SATA.html">Boot from SATA</a></li><li class='active'><a href="../Hardware_&_Accessories/SPI.html">SPI</a></li><li class=''><a href="../Hardware_&_Accessories/PWM.html">PWM</a></li><li class=''><a href="../Hardware_&_Accessories/Watchdog.html">Watchdog</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Wireless Communication</a><ul class='nav nav-list'><li class=''><a href="../Wireless_Communication/WiFi.html">WiFi</a></li><li class=''><a href="../Wireless_Communication/WiFi_SoftAP.html">WiFi SoftAP</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Cookbook Linux</a><ul class='nav nav-list'><li class=''><a href="../Cookbook_Linux/Understanding_Linux_Software_Management_And_Installing.html">Understanding Linux Software Management And Installing</a></li><li class=''><a href="../Cookbook_Linux/Linux_Command_Line_Interface.html">Linux Command Line Interface</a></li><li class=''><a href="../Cookbook_Linux/Set_video_output.html">Set video output</a></li><li class=''><a href="../Cookbook_Linux/Device_Tree_Editor.html">Device Tree Editor</a></li><li class=''><a href="../Cookbook_Linux/Change_Web_Control_Panel_port.html">Change Web Control Panel port</a></li><li class=''><a href="../Cookbook_Linux/Playing_video_with_GStreamer.html">Playing video with GStreamer</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Arduino DUE (Sam3x)</a><ul class='nav nav-list'><li class=''><a href="../Arduino_DUE_(Sam3x)/Overview.html">Overview</a></li><li class=''><a href="../Arduino_DUE_(Sam3x)/Programming_Arduino_Due_from_Internal_Processor(iMX6).html">Programming Arduino Due from Internal Processor(iMX6)</a></li><li class=''><a href="../Arduino_DUE_(Sam3x)/Programming_Arduino_Due_from_External_PC.html">Programming Arduino Due from External PC</a></li><li class=''><a href="../Arduino_DUE_(Sam3x)/Troubleshooting_Programming_Arduino_Due_from_External_PC.html">Troubleshooting Programming Arduino Due from External PC</a></li><li class=''><a href="../Arduino_DUE_(Sam3x)/Arduino_Shields_With_UDOO.html">Arduino Shields With UDOO</a></li></ul></li><li class=' has-children'><a href="../Serial_Libraries/index.html" class="folder"><i class="arrow">&nbsp;</i>Serial Libraries</a><ul class='nav nav-list'><li class=''><a href="../Serial_Libraries/Java_Serial_Libraries.html">Java Serial Libraries</a></li><li class=''><a href="../Serial_Libraries/C_Serial_Libraries.html">C Serial Libraries</a></li><li class=''><a href="../Serial_Libraries/PHP_Serial_Libraries.html">PHP Serial Libraries</a></li><li class=''><a href="../Serial_Libraries/Python_Serial_Libraries.html">Python Serial Libraries</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Cookbook Android</a><ul class='nav nav-list'><li class=''><a href="../Cookbook_Android/UDOO_Android_Boot_Walkthrough.html">UDOO Android Boot Walkthrough</a></li><li class=''><a href="../Cookbook_Android/UDOO_Android_Settings.html">UDOO Android Settings</a></li><li class=''><a href="../Cookbook_Android/Switch_Between_Adb_Debug_And_ADK_Connection.html">Switch Between Adb Debug And ADK Connection</a></li><li class=''><a href="../Cookbook_Android/How_To_Install_Gapps_On_UDOO_Running_Android.html">How To Install Gapps On UDOO Running Android</a></li><li class=''><a href="../Cookbook_Android/Android_And_Arduino_Simple_Hello_World_Tutorial.html">Android And Arduino Simple Hello World Tutorial</a></li><li class=''><a href="../Cookbook_Android/Android_And_Arduino_Bidirectional_Communication.html">Android And Arduino Bidirectional Communication</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Projects Examples</a><ul class='nav nav-list'><li class=''><a href="../Projects_Examples/Face_Recognition_And_Face_Tracking_Via_OpenCV_And_UDOO.html">Face Recognition And Face Tracking Via OpenCV And UDOO</a></li><li class=''><a href="../Projects_Examples/Remote_Metereological_Station_With_UDOO.html">Remote Metereological Station With UDOO</a></li><li class=''><a href="../Projects_Examples/DIY_NAS_With_Openmediavault_And_UDOO.html">DIY NAS With Openmediavault And UDOO</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Advanced Topics</a><ul class='nav nav-list'><li class=''><a href="../Advanced_Topics/Setup_development_environment.html">Setup development environment</a></li><li class=''><a href="../Advanced_Topics/Compile_UDOObuntu_(complete_bootable_image).html">Compile UDOObuntu (complete bootable image)</a></li><li class=''><a href="../Advanced_Topics/Compile_U-Boot_Bootloader.html">Compile U-Boot Bootloader</a></li><li class=''><a href="../Advanced_Topics/Compile_Linux_Kernel.html">Compile Linux Kernel</a></li><li class=''><a href="../Advanced_Topics/Compile_Android_From_Source.html">Compile Android From Source</a></li><li class=''><a href="../Advanced_Topics/Install_A_Custom_Debian_Distro_With_Debootstrap.html">Install A Custom Debian Distro With Debootstrap</a></li><li class=''><a href="../Advanced_Topics/Boot_process.html">Boot process</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Mods</a><ul class='nav nav-list'><li class=''><a href="../Mods/Mod_Your_UDOO_To_Improve_WiFi_Performances.html">Mod Your UDOO To Improve WiFi Performances</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>FAQ</a><ul class='nav nav-list'><li class=''><a href="../FAQ/Introductive.html">Introductive</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Troubleshooting</a><ul class='nav nav-list'><li class=''><a href="../Troubleshooting/Why_My_UDOO_Wont_Boot.html">Why My UDOO Wont Boot</a></li><li class=''><a href="../Troubleshooting/How_Can_I_Solve_My_HDMI_Issues.html">How Can I Solve My HDMI Issues</a></li><li class=''><a href="../Troubleshooting/How_Do_I_Set_Up_My_LVDS_Panel.html">How Do I Set Up My LVDS Panel</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Hackaton Survival Guide</a><ul class='nav nav-list'><li class=''><a href="../Hackaton_Survival_Guide/Mirroring_UDOOs_Desktop_on_your_PC_with_VNC_Remote_Desktop.html">Mirroring UDOOs Desktop on your PC with VNC Remote Desktop</a></li><li class=''><a href="../Hackaton_Survival_Guide/Programming_UDOOs_Arduino_from_your_PC.html">Programming UDOOs Arduino from your PC</a></li><li class=''><a href="../Hackaton_Survival_Guide/Useful_Resources.html">Useful Resources</a></li></ul></li></ul>
+
+                <div class="sidebar-links">
+                    
+                        <!-- Links -->
+                        <a href="http://www.udoo.org" target="_blank">Home</a><br><a href="http://www.udoo.org/downloads" target="_blank">Downloads</a><br><a href="http://www.udoo.org/tutorial" target="_blank">Tutorials</a><br><a href="http://www.udoo.org/forum" target="_blank">Forum</a><br>
+                        <!-- Twitter -->
+                        
+                        <hr/>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="right-column  content-area col-sm-9">
+
+            <div class="content-page">
+                
+                <div class="doc_content">
+                    <article>
+            <div class="page-header">
+            <h1>SPI</h1>
+        </div>
+    
+    <p>From <em>Wikipedia</em>:</p>
+<blockquote>
+<p>The <a href="https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus">Serial Peripheral Interface bus</a> (SPI) is a synchronous serial
+communication interface specification used for short distance communication,
+primarily in embedded systems. The interface was developed by Motorola and has
+become a de facto standard. Typical applications include sensors, Secure
+Digital cards, and liquid crystal displays.</p>
+<p>SPI devices communicate in full duplex mode using a master-slave architecture
+with a single master. The master device originates the frame for reading and
+writing. Multiple slave devices are supported through selection with individual
+slave select (SS) lines.</p>
+</blockquote>
+<h2 id="page_ECSPI">ECSPI</h2>
+<p>From the <strong>NXP</strong> <a href="http://www.nxp.com/files/32bit/doc/ref_manual/IMX6DQRM.pdf">iMX 6 Quad/Dual Reference Manual</a>:</p>
+<blockquote>
+<p>The <em>Enhanced Configurable Serial Peripheral Interface (ECSPI)</em> is a
+full-duplex, synchronous, four-wire serial communication block.  The ECSPI
+contains a 64 x 32 receive buffer (RXFIFO) and a 64 x 32 transmit buffer
+(TXFIFO). With data FIFOs, the ECSPI allows rapid data communication with fewer
+software interrupts. The figure below shows a block diagram of the ECSPI.</p>
+<p>Key features of the ECSPI include:</p>
+<ul>
+<li>Full-duplex synchronous serial interface</li>
+<li>Master/Slave configurable</li>
+<li>Four Chip Select (SS) signals to support multiple peripherals</li>
+<li>Transfer continuation function allows unlimited length data transfers</li>
+<li>32-bit wide by 64-entry FIFO for both transmit and receive data</li>
+<li>Polarity and phase of the Chip Select (SS) and SPI Clock (SCLK) are configurable</li>
+<li>Direct Memory Access (DMA) support</li>
+<li>Max operation frequency up to the reference clock frequency.</li>
+</ul>
+<p>The ECSPI supports the modes described in the indicated sections:</p>
+<ul>
+<li>Master Mode</li>
+<li>Slave Mode</li>
+<li>Low Power Modes</li>
+</ul>
+</blockquote>
+<p>For more detailed information look at the Chapter 21 of the <a href="http://www.nxp.com/files/32bit/doc/ref_manual/IMX6DQRM.pdf">iMX 6 Quad/Dual Reference Manual</a></p>
+<h2 id="page_UDOO_QUADDUAL_SPI_channels">UDOO QUAD/DUAL SPI channels</h2>
+<p>UDOO QUAD/DUAL exposes 2 <strong>ECSPI</strong> channels:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>MISO</th>
+<th>MOSI</th>
+<th>CLOCK</th>
+<th>SS0</th>
+<th>SS1</th>
+<th>SS2</th>
+<th>SS3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ECSPI_1</td>
+<td>45</td>
+<td>37</td>
+<td>36</td>
+<td>46</td>
+<td>31</td>
+<td>53</td>
+<td>47</td>
+</tr>
+<tr>
+<td>ECSPI_2</td>
+<td>50</td>
+<td>51</td>
+<td>52</td>
+<td>34</td>
+<td>31</td>
+<td>53</td>
+<td>47</td>
+</tr>
+<tr>
+<td>ECSPI_5</td>
+<td>3</td>
+<td>5</td>
+<td>2</td>
+<td>4</td>
+<td>9</td>
+<td>8</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>By default the SPI buses are not enabled and their pins are configured as GPIO. In order to enable
+ECSPI, follow this <a href="../Cookbook_Linux/Device_Tree_Editor.html">guide</a>.</p>
+<h3 id="page_ECSPI_1">ECSPI 1</h3>
+<p>ECSPI 1 is a full SPI, including Select Signals (SS0, SS1, SS2).</p>
+<h3 id="page_ECSPI_2">ECSPI 2</h3>
+<p>ECSPI 2 is a full SPI, including Select Signals (SS0, SS1, SS2).</p>
+<h3 id="page_ECSPI_5">ECSPI 5</h3>
+<p>ECSPI 5 has only six signals exposed (MISO, MOSI, SCLK, SS0, SS1, SS2), and
+many of them are shared with <em>SD1</em>.</p>
+<h2 id="page_Use">Use</h2>
+<p>SPI is used by many sensor chips, flash memories, displays and other
+perifericals following a master-slave with a single master. <strong>UDOO QUAD/DUAL</strong>
+supports master mode only on its <em>Enhanced Configurable SPI</em> (ECSPI).
+The protocol consist of four main signals:</p>
+<ul>
+<li>
+<strong>MISO</strong>: Master Input Slave Output</li>
+<li>
+<strong>MOSI</strong>: Master Output Slave Input</li>
+<li>
+<strong>SCLK</strong>: Serial Clock</li>
+<li>
+<strong>SS</strong>: Slave Select</li>
+</ul>
+<p>If you want to simply use it from a user application, just enable the
+<strong>ecspi{X}</strong> peripherical from the <em>Device Tree Editor</em> and use the <strong>spidev</strong>
+module to interact with it.
+In order to reduce conficts with other devices, SPI buses enabled from the
+<em>Device Tree Editor</em> have only SS0 signal as chip select.</p>
+<h3 id="page_Example">Example</h3>
+<p>From <a href="http://linux-sunxi.org/SPIdev">Linux-Sunxi</a> website:</p>
+<pre><code class="language-cpp">char *buffer;
+char buf[10];
+
+file=spi_init(&quot;/dev/spidev0.0&quot;); //dev
+
+buf[0] = 0x41;
+buf[1] = 0xFF;
+spi_write(0xE6,0x0E,2,buf,file); //this will write value 0x41FF to the address 0xE60E
+
+buffer=(char *)spi_read(0xE6,0x0E,4,file); //reading the address 0xE60E
+
+close(file);
+</code></pre>
+
+        <nav>
+        <ul class="pager">
+            <li><a href="../Hardware_&_Accessories/Boot_from_SATA.html">Previous</a></li>            <li><a href="../Hardware_&_Accessories/PWM.html">Next</a></li>        </ul>
+    </nav>
+        
+    <span style="float: left; font-size: 10px; color: gray;">
+    This page was last updated on Monday, October 10, 2016 at 1:17 PM.
+    </span>
+    
+</article>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+        <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-40057783-1', 'auto', {
+            'allowLinker': true});
+      ga('send', 'pageview');
+    </script>
+</body>
+</html>
